@@ -9,13 +9,11 @@ class HeaderBar extends Component {
                 <div className="header-bar__title">
                     Jonatan Chaverri
                 </div>
-                <nav className="header-bar__menu">
-                    <ul>
-                        <li> About </li>
-                        <li> Projects </li>
-                        <li> Contact </li>
-                    </ul>
-                </nav>
+                <div className="header-bar__menu">
+                    <div className="header-bar__menu-item"> About </div>
+                    <div className="header-bar__menu-item"> Projects </div>
+                    <div className="header-bar__menu-item"> Contact </div>
+                </div>
             </div>
         )
     }

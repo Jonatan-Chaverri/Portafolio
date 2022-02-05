@@ -1,14 +1,16 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .header-bar {
     position: fixed;
     top: 0;
     left: 0;
-    background: black;
-    color: white;
+    color: black;
     width: 100vw;
+    background: rgba(25, 118, 190, 0);
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }
@@ -30,7 +32,39 @@ body {
     vertical-align: middle;
 }
 
-.header-bar__menu li {
+.header-bar__menu-item {
     display: inline-block;
-    margin-left: 1.4rem;
+    height: 1.5rem;
+    margin-left: 1.7rem;
+    padding-bottom: 4px;
+    transition: border 300ms ease-out;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.header-bar__menu-item:hover {
+    border-color: white;
+}
+
+.home__front-page {
+    background-color: #B5BADA;
+    width: 100vw;
+    height: 99vh;
+}
+
+.home__about {
+    margin: 3rem 0 0 2rem;
+}
+
+.home__about-description {
+    display: inline-block;
+    width: 40vw;
+    font-size: 1.3rem;
+}
+
+.home__about-description-title {
+    font-size: 2.5rem;
+    width: 40vw;
+    margin-bottom: 20px;
 }
