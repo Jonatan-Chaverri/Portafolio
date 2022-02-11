@@ -1,8 +1,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    margin-left: 0;
-    margin-top: 0;
+    margin: 0 0 0 0;
 }
 
 .header-bar {
@@ -24,6 +23,7 @@ body {
     text-align: left;
     font-size: 1.5rem;
     padding-left: 1rem;
+    cursor: default;
 }
 
 .header-bar__menu {
@@ -43,6 +43,7 @@ body {
     border-bottom: solid;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
 }
 
 .header-bar__menu-item:hover {
@@ -51,6 +52,9 @@ body {
 
 .home__front-page {
     background-image: url('./images/front.jpeg');
+    position: fixed;
+    top: 0;
+    z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: auto 100%;
@@ -82,8 +86,43 @@ body {
     }
 }
 
+.home_front-space-container {
+    width: 100vw;
+    height: 20vh;
+}
+
+.home_front-page-text-container {
+    margin-left: 70vw;
+    width: 19rem;
+    padding: 1rem 0 1rem 1rem;
+    border: solid white 1px;
+}
+
+.home_front-page-text-name {
+    color: white;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.home_front-page-text-title {
+    color: white;
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.home_front-page-text-location {
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.home-body {
+    margin-top: 100vh;
+    background: white;
+}
+
 .home__about {
-    margin: 3rem 0 0 2rem;
+    padding: 3rem 0 0 2rem;
 }
 
 .home__about-description {

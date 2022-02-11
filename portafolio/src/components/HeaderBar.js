@@ -3,9 +3,17 @@ import React, { Component } from 'react'
 
 class HeaderBar extends Component {
 
+    componentDidMount() {
+        window.onscroll = () => {
+            const element = document.getElementById("header-bar")
+            let opacity = window.pageYOffset/400
+            element.style.background = `rgba(25, 118, 190, ${opacity})`
+        }
+    }
+
     render() {
         return (
-            <div className="header-bar">
+            <div className="header-bar" id="header-bar">
                 <div className="header-bar__title">
                     Jonatan Chaverri
                 </div>
