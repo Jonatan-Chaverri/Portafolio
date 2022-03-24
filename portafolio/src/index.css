@@ -252,12 +252,41 @@ body {
 
 .home__about-description {
     display: inline-block;
-    width: 40vw;
+    width: 40%;
     font-size: 1.3rem;
 }
 
 .home__about-description-title {
     font-size: 2.5rem;
-    width: 40vw;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+.home__about-images-container {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    text-align: center;
+    margin: 4rem 4rem 4rem 4rem;
+}
+
+.home__about-images-wrapper {
+    width: 30.6rem;
+    display: inline-block;
+}
+
+.home__about-image-one {
+    display: inline-block;
+    vertical-align: top;
+    transform: translateY(2rem);
+}
+
+.home__about-image-two {
+    display: inline-block;
+    transform: translateX(-8rem);
+}
+
+.home__about-image-three {
+    transform: translateY(-4rem) translateX(-3rem);
+    display: inline-block;
 }
